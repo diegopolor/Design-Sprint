@@ -1,0 +1,198 @@
+:root{
+ 
+ /*----  Variables fuentes -----*/
+    --font-size: "20px";
+    --font-size-titulo: 30px;  
+    --font-color-red: #FF0000; 
+    --font-color-titulo: #000000; 
+    --font-color-parrafo: rgb(0,0,0,.6); 
+  
+    --font-titulo-style: italic; 
+  
+
+/* ----- Variables de colores ---- */
+    --color-main: #DB1A1A; 
+    
+
+}
+
+html{
+  
+    font-size: var(--font-size); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.navbar{
+   
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(0,0,0,.2);
+    z-index: 100;
+
+    position: sticky;
+    top:0; 
+         
+
+}
+
+.navbar-contenedor{
+    
+    width: 90%;
+    margin: auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar-logo{
+
+   width: 60px;
+
+   transition: .5s all;
+
+}
+
+.navbar-menu__items{
+  
+    text-decoration: none;
+    color: var(--font-color-titulo);
+    font-style: var(--font-titulo-style);
+    margin: 0 15px 0 15px;  
+    
+     
+}
+
+.navbar-menu__items:hover{
+
+    border-bottom: 1px solid var(--font-color-red);
+    line-height: 2; 
+    color: var(--font-color-red);
+
+
+}
+
+.portada{
+  
+     width: 100%;
+     height: 55vh;
+     background-image: url(../imagenes/portada.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     
+
+
+}
+
+.portada-socialbar{
+ 
+    width:10%;
+    height: 0px;
+    border-bottom: 30px solid var(--color-main);
+    border-left: 20px solid transparent;
+   
+    float:right;
+
+   
+
+}
+
+.portada-socialbar__icons{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  
+
+}
+
+.portada-socialbar__item{
+
+  color: white;
+  padding: 0px 10px 0px 10px;
+
+}
+
+.portada-contenido{
+
+   width: 90%;
+   height: 100%; 
+   display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.portada-contenido__texto{
+
+ width: 40%;
+
+}
+
+.portada-contenido__texto-titulo{
+
+   color: var(--font-color-red);
+   font-style: var(--font-titulo-style);
+
+}
+
+.portada-contenido__texto-parrafo{
+
+  color: var(--font-color-parrafo);
+  font-size: 20px;
+
+}
+
+
+
+.portada-contenido__imagen{
+  
+  width: 50%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.portada-contenido__imagen::after{
+
+  content: "Estampados personalizados";
+  margin-top: -30px;
+  color: white;
+  font-style: var(--font-titulo-style); 
+
+}
+
+.portada-contenido__imagen-img{
+
+  width: 60%;
+  height: 60%;
+  min-width: 200px;
+ 
+}
+
+.portada-contenido__imagen-text{
+
+   width: 40%;  
+   min-width: 200px;
+   height: 0px;
+   border-bottom: 20px solid var(--color-main);
+   border-top: 20px solid var(--color-main);
+   border-left: 20px solid transparent; 
+   border-right: 20px solid transparent;
+   margin-top: -10%;
+
+   animation-name: text-portada;
+   animation-duration: 1s;
+
+}
+
+@keyframes text-portada{
+
+    from{margin-top: 50px;};
+    to {margin-top: 0px;};
+  
+  }
