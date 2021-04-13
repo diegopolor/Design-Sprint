@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS & Normalize -->
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/estilos.css" />
-
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+  
     <title>Design & Sprint - Estampados personalizados</title>
   </head>
 
@@ -16,12 +17,12 @@
       <div class="navbar-contenedor">
         <img
           class="navbar-logo"
-          src="/imagenes/logo.png"
+          src="imagenes/logo.png"
           alt="logo-design-and-sprint"
         />
         <nav class="navbar-menu">
           <a class="navbar-menu__items" href="#">Inicio</a>
-          <a class="navbar-menu__items" href="#">Sobre Nosotros</a>
+          <a class="navbar-menu__items" href="#about">Sobre Nosotros</a>
           <a class="navbar-menu__items" href="#">Galeria</a>
           <a class="navbar-menu__items" href="#">Contacto</a>
         </nav>
@@ -48,34 +49,69 @@
           </div>
 
           <div class="portada-contenido__imagen">
-            <img
-              class="portada-contenido__imagen-img"
-              src="/imagenes/imagen-portada.png"
-              alt="estampados"
-              />
-
+            <img class="portada-contenido__imagen-img" src="imagenes/imagen-portada.png "alt="estampados"/>
             <div class="portada-contenido__imagen-text"></div>
           </div>
         </div>
-      </div>
+        <svg class="portada-borde" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 77.06"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M0,262.2,80,259c80-3.1,240-9.72,400-3.19s320,25.68,480,35.31a3991.15,3991.15,0,0,0,480,0c160-9.63,320-28.9,400-38.53l80-9.63V320H0Z" transform="translate(0 -242.94)"/></svg>
+
     </header>
 
   
      <section class="about">
 
 
-        <div class="content-about">           
-            <h3 class="about-titulo"></h3>    
+        <div class="content-about" id="about">                       
             <div class="about-elements">             
-                <div class="about-text">               
+                <div class="about-text"> 
+                  <h3 class="about-titulo" ></h3>                
                     <p class="about-parrafo"> Somos un Workshop de servicios especializados en la personalización e impresión digital Directa a la Prenda (DTG) para pequeñas empresas, negocios emergentes, marcas de ropa, creativos de la moda, personas independientes y clientes que requieran de servicios de personalización profesional y eficiente.</p>
-                      
-                      <p class="about-parrafo">Contamos con impresoras de alta resolución para el estampado digital de diversas fibras textiles cuya composición sea 100% algodón o mezclas polialgodón 50/50, además contamos con una oficina de despacho y personalización de prendas al instante tanto para pedidos mínimos (desde una unidad) así como medianos (entre 12 y 50 unidades).
-                      </p>
+                    <p class="about-parrafo">Contamos con impresoras de alta resolución para el estampado digital de diversas fibras textiles cuya composición sea 100% algodón o mezclas polialgodón 50/50, además contamos con una oficina de despacho y personalización de prendas al instante tanto para pedidos mínimos (desde una unidad) así como medianos (entre 12 y 50 unidades).</p>
                 </div>
-           <img  class="about-img" src="imagenes/logo-en-camisa.jpg" alt="">
-      </div>  
-     </section>
+                  <img  class="about-img" src="imagenes/logo-en-camisa.jpg" alt="">
+             </div>  
+       </div>  
+  
+    </section>
+
+    <section class="servicios">
+    <div class="servicios-titulo"><h3 class="servicios-titulo__h3">Nuestros servicios</h3></div>
+    <div class="servicios-contenedor">
+
+           <div class="servicios-estampados">  
+             <div class="servicios-estampados-tipos">             
+              <h3 class="servicios-estampados__titulos">Estampas sublimación</h3>
+              <p class="servicios-estampados__parrafo">La sublimación es el proceso que consiste en el cambio de estado 
+                sólido a estado gaseoso sin pasar por el estado líquido. Al proceso inverso, 
+                es decir, al paso directo del estado gaseoso al estado sólido, se le denomina 
+                sublimación inversa
+              </p>       
+            </div> 
+            <img class = "servicios-estampados__imagenes" src="imagenes/sublimacion.jpg" alt="">
+
+            </div>
+      
+           <div class="servicios-estampados"> 
+             <div class="servicios-estampados-tipos">            
+             <h3 class="servicios-estampados__titulos">Estampas transfer</h3>
+              <p class="servicios-estampados__parrafo">El estampado transfer es un tipo de impresión digital utilizado para 
+                 decorar de forma económica prendas textiles de algodón, poliéster
+                 y también otros materiales como la madera. Su proceso consiste en la
+                 impresión de un diseño en papel transfer y luego la transferencia por lo general 
+                 en textiles, por acción del calor y presión de una prensa térmica.
+              </p> 
+            </div>                     
+            <img class = "servicios-estampados__imagenes" src="imagenes/transfer.jpg" alt=""> 
+
+           </div>
+ 
+        </div>  
+    </div>
+
+    
+
+    </section> 
+
 
 
 

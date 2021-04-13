@@ -76,14 +76,13 @@ html{
 .portada{
   
      width: 100%;
-     height: 55vh;
+     height: 500px;
      background-image: url(../imagenes/portada.jpg);
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
-     
-
-
+  
+      
 }
 
 .portada-socialbar{
@@ -118,11 +117,12 @@ html{
 .portada-contenido{
 
    width: 90%;
-   height: 100%; 
+   height: 80%; 
    display: flex;
    margin: auto;
    align-items: center;
    justify-content: space-between;
+  
 
 }
 
@@ -184,26 +184,23 @@ html{
    border-left: 20px solid transparent; 
    border-right: 20px solid transparent;
    margin-top: -10%;
-
-   animation-name: text-portada;
-   animation-duration: 3s;
+ 
 
 }
 
-@keyframes text-portada{
+.portada-borde{
 
-    from{margin-top: 50px;};
-    to {margin-top: 0px;};
-  
-  }
+  margin-top: 20px;
 
+}
 
   .about{
 
     width: 100%;
-    height: 993px;
+    height: 750px;
     background-image: url(../imagenes/fondo-sobre-mi.png);
     background-size: cover;
+    margin-top: 20px;
 
 
 
@@ -224,7 +221,7 @@ html{
     
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
 
   }
@@ -233,6 +230,10 @@ html{
   .about-text{
 
    width: 50%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    
   }
 
@@ -276,3 +277,83 @@ html{
    font-size: 25px;
 
   }
+
+
+  /* .servicios{
+
+    
+
+  } */
+
+  .servicios-titulo{
+
+   width: 100%;
+   height: 120px;
+   background-color: wheat;
+   background-image:linear-gradient(rgb(239,61,61,.6), rgb(239,61,61,.6)) ,url(../imagenes/servicios.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+  }
+
+  .servicios-titulo__h3{
+
+   color: white;
+   font-size: var(--font-size-titulo);
+
+  }
+
+  .servicios-contenedor{
+   
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+   
+
+  }
+
+.servicios-estampados{
+   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  }
+
+.servicios-estampados-tipos{
+
+width: 40%;
+
+}
+    
+.servicios-estampados__titulos{
+
+  font-style: var(--font-titulo-style);
+
+}
+
+.servicios-estampados__parrafo{
+
+  color: var(--font-color-parrafo);
+
+}
+
+.servicios-estampados__imagenes{
+
+  width: 40%; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin: 50px;
+  box-shadow: 1px 1px 10px rgb(0,0,0,.2);
+
+}
+  
+
+
+  
