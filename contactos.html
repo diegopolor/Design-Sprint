@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS & Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+    <title>Design & Sprint - Estampados personalizados</title>
+  </head>
+
+  <body class="contenedor">
+    <div class="navbar">
+      <div class="navbar-contenedor">
+        <img
+          class="navbar-logo"
+          src="imagenes/logo.png"
+          alt="logo-design-and-sprint"
+        />
+        <nav class="navbar-menu">
+          <a class="navbar-menu__items" href="index.html">Inicio</a>
+          <a class="navbar-menu__items" href="#about">Sobre Nosotros</a>
+          <a class="navbar-menu__items" href="galeria.html">Galeria</a>
+          <a class="navbar-menu__items" href="contactos.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+
+    <header>
+      <div class="portada">
+        <div class="portada-socialbar">
+          <div class="portada-socialbar__icons">
+            <a target="_blank" href="https://www.instagram.com/ds.barranquilla/"
+              ><i class="fab fa-instagram portada-socialbar__item"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-facebook portada-socialbar__item"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-whatsapp portada-socialbar__item"></i
+            ></a>
+          </div>
+        </div>
+        <!-- .portada-socialbar -->
+        <div class="portada-contenido">
+          <div class="portada-contenido__texto">
+            <h1 class="portada-contenido__texto-titulo">Design & Sprint</h1>
+            <p class="portada-contenido__texto-parrafo">
+              Somos una tienda virtual de diseños de estampados personalizados
+              en la ciudad de barranquilla.
+            </p>
+          </div>
+          <!-- .portada-contenido__texto -->
+          <div class="portada-contenido__imagen">
+            <img
+              class="portada-contenido__imagen-img"
+              src="imagenes/imagen-portada.png "
+              alt="estampados"
+            />
+            <div class="portada-contenido__imagen-text"></div>
+          </div>
+        </div>
+        <svg
+          class="portada-borde"
+          id="Capa_1"
+          data-name="Capa 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 77.06"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+              }
+            </style>
+          </defs>
+          <path
+            class="cls-1"
+            d="M0,262.2,80,259c80-3.1,240-9.72,400-3.19s320,25.68,480,35.31a3991.15,3991.15,0,0,0,480,0c160-9.63,320-28.9,400-38.53l80-9.63V320H0Z"
+            transform="translate(0 -242.94)"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Mapa -->
+    <section class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62671.15869297858!2d-74.79029805649081!3d10.967341619479358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1618379463365!5m2!1ses!2sco"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- Contactos -->
+    <main class="container m-40px contenido">
+      <h2 class="contactos-titulo">Contactanos</h2>
+      <form class="formulario" action="">
+        <p>
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" type="text" name="fullname" />
+        </p>
+        <p>
+          <label for="telefono">Numero de celular</label>
+          <input id="telefono" type="tel" name="phone" />
+        </p>
+        <p class="block">
+          <label for="email">Correo electronico</label>
+          <input id="email" type="email" name="email" />
+        </p>
+        <p class="block">
+          <label>Mensaje</label>
+          <textarea name="message" rows="3"></textarea>
+        </p>
+        <p class="block">
+          <button>Enviar</button>
+        </p>
+      </form>
+    </main>
+
+    <footer class="footer-index">
+      <div class="footer-index__content">
+        <div class="footer-index__info">
+          <h3 class="footer-index__titulo">Menú inferior</h3>
+          <a class="footer-index__item" href="#">TERMINOS DE SERVICIO</a>
+          <a class="footer-index__item" href="#">NUESTROS PRODUCTOS</a>
+          <a class="footer-index__item" href="#">CONTACTO</a>
+        </div>
+        <div class="siguenos">
+          <h3 class="footer-index__titulo">Siguenos</h3>
+          <div class="redes-sociales">
+            <ul>
+              <li>
+                <a class="facebook" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--.redes-sociales-->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Boton para subir al comienzo de la pagina  -->
+    <div class="up-fixed">
+      <a class="up-icon" href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

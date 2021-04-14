@@ -20,6 +20,7 @@ html {
   font-size: var(--font-size);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,6 +35,12 @@ body {
 }
 img {
   max-width: 100%;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
 }
 .background-editado {
   background-position: center;
@@ -188,7 +195,7 @@ img {
   margin-bottom: 40px;
 }
 main {
-  box-shadow: #000;
+  /* box-shadow: #000; */
   padding-bottom: 20px;
 }
 .galeria {
@@ -210,13 +217,12 @@ main {
 
 .imagenes__galeria {
   border-radius: 20px;
-  transition: all .2s ease-in-out;  
+  transition: all 0.2s ease-in-out;
 }
 .imagenes__galeria:hover {
   box-shadow: 0 0 50px #666;
   transform: scale(1.01);
-  cursor: pointer; 
-
+  cursor: pointer;
 }
 .image-1 {
   background-image: url(../imagenes/galeria/camisa2.jpg);
@@ -263,6 +269,7 @@ main {
 .image-13 {
   background-image: url(../imagenes/galeria/camisa14.jpg);
 }
+/* Fin de galeria */
 
 .about {
   width: 100%;
@@ -387,6 +394,64 @@ main {
   margin: 50px;
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
 }
+
+/* Contactos */
+.contenido {
+  background-color: #222222;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.contactos-titulo {
+  text-align: center;
+  margin: 0px 0 20px 0;
+  color: #fff;
+}
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  width: 70%;
+  margin: 0 auto;
+}
+.formulario p {
+  margin: 0;
+  padding: 1em;
+}
+.formulario label {
+  display: block;
+  color: #fff;
+}
+.formulario .block {
+  grid-column: 1 / 3;
+}
+.formulario input,
+.formulario textarea,
+.formulario button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(145, 145, 145);
+  border-bottom: 1px solid #d63031;
+}
+.formulario button {
+  background: #b70e21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.formulario button:hover,
+.formulario button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* Fin de contactos */
 
 .footer-index {
   margin-top: 100px;
