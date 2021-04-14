@@ -20,13 +20,9 @@ html {
   font-size: var(--font-size);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  box-sizing: border-box;
+
 }
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -35,7 +31,7 @@ body {
   width: 7px;
 }
 .contenedor::-webkit-scrollbar-thumb {
-  background-color: #ff0000;
+  background-color: #ce2d2d;
 }
 img {
   max-width: 100%;
@@ -103,9 +99,7 @@ img {
      background-image: url(../imagenes/portada.jpg);
      background-size: cover;
      background-position: center;
-     background-repeat: no-repeat;
-  
-      
+     background-repeat: no-repeat;     
 }
 
 .portada-socialbar{
@@ -116,9 +110,6 @@ img {
     border-left: 20px solid transparent;
    
     float:right;
-
-   
-
 }
 
 .portada-socialbar__icons{
@@ -137,10 +128,11 @@ img {
 
    width: 90%;
    height: 80%; 
-   display: flex;
-   margin: auto;
+   margin:auto; 
+   display: flex;   
    align-items: center;
    justify-content: space-between;
+  
   
 
 }
@@ -554,12 +546,8 @@ width: 40%;
   font-weight: normal;
 }
 
-/* Siguenos */
-.redes-sociales {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
 .redes-sociales ul {
   margin: 0;
   padding: 0;
