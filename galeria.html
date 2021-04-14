@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS & Normalize -->
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Design & Sprint - Estampados personalizados</title>
   </head>
 
-  <body>
-    <div class="navbar">
+  <body class="contenedor">
+    <!-- <div class="navbar">
       <div class="navbar-contenedor">
         <img
           class="navbar-logo"
-          src="/imagenes/logo.png"
+          src="imagenes/logo.png"
           alt="logo-design-and-sprint"
         />
         <nav class="navbar-menu">
           <a class="navbar-menu__items" href="index.html">Inicio</a>
-          <a class="navbar-menu__items" href="sobre-nosotros.html">Sobre Nosotros</a>
+          <a class="navbar-menu__items" href="sobre-nosotros.html"
+            >Sobre Nosotros</a
+          >
           <a class="navbar-menu__items" href="galeria.html">Galeria</a>
           <a class="navbar-menu__items" href="contactos.html">Contacto</a>
         </nav>
@@ -50,7 +57,7 @@
           <div class="portada-contenido__imagen">
             <img
               class="portada-contenido__imagen-img"
-              src="/imagenes/imagen-portada.png"
+              src="imagenes/imagen-portada.png"
               alt="estampados"
             />
             <div class="portada-contenido__imagen-text"></div>
@@ -58,7 +65,7 @@
         </div>
       </div>
     </header>
-    <!-- Galeria -->
+    Galeria
     <main class="container m-40px">
       <div class="galeria">
         <h2 class="portada-contenido__texto-titulo">Galeria</h2>
@@ -78,13 +85,32 @@
         <div class="imagenes__galeria background-editado image-12"></div>
         <div class="imagenes__galeria background-editado image-13"></div>
       </div>
-      <!-- .imagenes -->
-    </main>
+       .imagenes
+    </main> -->
+    <!-- Footer -->
+    <footer class="pie">
+      <div class="container pie-pagina">
+        <section class="contactos">
+          <h3 class="pie-pagina__titulo">Contactanos</h3>
+          <div class="info">
+            <p class="contactos__telefono">Telefono: <span>3042047713</span> </p>
+            <p class="contactos__email">Correo: <span>desing_sprint@desingsprint.com</span></p>
+          </div>
+        </section>
+        <section class="siguenos">
+          <h3 class="pie-pagina__titulo">Siguenos</h3>
+          <div class="redes-sociales">
+            <ul>
+              <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <!-- .redes-sociales -->
+        </section>
+      </div>
+    </footer>
     <!-- Script -->
-    <script
-      src="https://kit.fontawesome.com/2c36e9b7b1.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
