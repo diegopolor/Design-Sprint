@@ -213,7 +213,7 @@ main {
 .galeria .portada-contenido__texto-titulo {
   text-align: center;
   font-size: 40px;
-  color: #fff;
+  color: black;
   margin: 0;
 }
 .imagenes {
@@ -225,7 +225,7 @@ main {
 }
 
 .imagenes__galeria {
-  border: 2px solid #000;
+  border-radius: 20px;
   transition: all .2s ease-in-out;  
 }
 .imagenes__galeria:hover {
