@@ -89,7 +89,33 @@ img {
   float: right;
 }
 
-.portada-socialbar__icons {
+.portada{
+  
+     width: 100%;
+     height: 500px;
+     background-image: url(../imagenes/portada.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+  
+      
+}
+
+.portada-socialbar{
+ 
+    width:10%;
+    height: 0px;
+    border-bottom: 30px solid var(--color-main);
+    border-left: 20px solid transparent;
+   
+    float:right;
+
+   
+
+}
+
+.portada-socialbar__icons{
+
   display: flex;
   justify-content: center;
   margin-top: 5px;
@@ -100,13 +126,16 @@ img {
   padding: 0px 10px 0px 10px;
 }
 
-.portada-contenido {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
+.portada-contenido{
+
+   width: 90%;
+   height: 80%; 
+   display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+  
+
 }
 
 .portada-contenido__texto {
@@ -143,28 +172,27 @@ img {
   min-width: 200px;
 }
 
-.portada-contenido__imagen-text {
-  width: 40%;
-  min-width: 200px;
-  height: 0px;
-  border-bottom: 20px solid var(--color-main);
-  border-top: 20px solid var(--color-main);
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  margin-top: -10%;
+.portada-contenido__imagen-text{
 
-  animation-name: text-portada;
-  animation-duration: 1s;
+   width: 40%;  
+   min-width: 200px;
+   height: 0px;
+   border-bottom: 20px solid var(--color-main);
+   border-top: 20px solid var(--color-main);
+   border-left: 20px solid transparent; 
+   border-right: 20px solid transparent;
+   margin-top: -10%;
+ 
+
 }
 
-@keyframes text-portada {
-  from {
-    margin-top: 50px;
-  }
-  to {
-    margin-top: 0px;
-  }
+.portada-borde{
+
+  margin-top: 20px;
+
 }
+
+
 
 /* Galeria */
 .container {
@@ -250,3 +278,241 @@ main {
 .image-13{
   background-image: url(../imagenes/galeria/camisa14.jpg);
 }
+
+  .about{
+
+    width: 100%;
+    height: 750px;
+    background-image: url(../imagenes/fondo-sobre-mi.png);
+    background-size: cover;
+    margin-top: 20px;
+
+
+
+  }
+
+  .content-about{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+  }
+
+  .about-elements{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+
+  }
+
+
+  .about-text{
+
+   width: 50%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+  }
+
+  .about-parrafo{
+
+   text-align: center;
+   color: var(--font-color-parrafo);
+   font-size: 20px;
+
+  }
+
+  .about-img{
+
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+    margin-left: -100px;
+
+  }
+
+  .about-titulo{
+   
+    width: 300px;
+    height: 0;
+    border-bottom: 20px solid var(--color-main);
+    border-top: 20px solid var(--color-main) ;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    
+  }
+  
+  .about-titulo::after{
+
+   content: "Sobre nosotros";
+   color: white;
+   font-size: 25px;
+
+  }
+
+
+  /* .servicios{
+
+    
+
+  } */
+
+  .servicios-titulo{
+
+   width: 100%;
+   height: 120px;
+   background-color: wheat;
+   background-image:linear-gradient(rgb(239,61,61,.6), rgb(239,61,61,.6)) ,url(../imagenes/servicios.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+  }
+
+  .servicios-titulo__h3{
+
+   color: white;
+   font-size: var(--font-size-titulo);
+
+  }
+
+  .servicios-contenedor{
+   
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+   
+
+  }
+
+.servicios-estampados{
+   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  }
+
+.servicios-estampados-tipos{
+
+width: 40%;
+
+}
+    
+.servicios-estampados__titulos{
+
+  font-style: var(--font-titulo-style);
+
+}
+
+.servicios-estampados__parrafo{
+
+  color: var(--font-color-parrafo);
+
+}
+
+.servicios-estampados__imagenes{
+
+  width: 40%; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin: 50px;
+  box-shadow: 1px 1px 10px rgb(0,0,0,.2);
+
+}
+  
+
+
+
+.footer-index{
+
+  margin-top: 200px;
+  width: 100%;
+  height: 250px;
+  background-color: #222222;
+ 
+}
+
+.footer-index__content{
+
+ width: 80%;
+ margin: auto;
+ display: flex;
+
+   
+}
+.footer-index__info{
+
+  margin-right: 20%;
+  margin-top: 20px;
+
+}
+
+.footer-index__titulo{
+
+  font-size: calc(var(--font-size-titulo) - 5px);
+  color: white;
+  font-style: var(--font-titulo-style)
+}
+
+.footer-index__item{
+ 
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+ 
+}
+
+.footer-social__icon{
+  
+  color: white;
+  font-size: 25px;
+  margin-right:20px ;
+
+}
+
+
+
+.up-fixed{
+
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255,255,255,.5);
+  border-radius: 20px;
+
+}
+
+.up-icon{
+
+   color: black;
+   font-size: 20px;
+
+}
+
+
