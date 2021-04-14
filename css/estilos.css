@@ -398,8 +398,9 @@ main {
 /* Contactos */
 .contenido {
   background-color: #222222;
-  border-radius: 10px;
+  border-radius: 25px;
   padding-top: 20px;
+  box-shadow: 2px 1px 10px rgb(0, 0, 0, 0.2);
 }
 .contactos-titulo {
   text-align: center;
@@ -434,7 +435,17 @@ main {
   outline: 0;
   color: rgb(145, 145, 145);
   border-bottom: 1px solid #d63031;
+  resize: none;
 }
+
+.formulario textarea::-webkit-scrollbar {
+  width: 7px;
+}
+.formulario textarea::-webkit-scrollbar-thumb {
+  background-color: #ce2d2d;
+  border-radius: 10px;
+}
+
 .formulario button {
   background: #b70e21;
   border: 0;
@@ -453,6 +464,8 @@ main {
 }
 /* Fin de contactos */
 
+
+/*footer */
 .footer-index {
   margin-top: 100px;
   width: 100%;
@@ -464,10 +477,15 @@ main {
   width: 80%;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+ 
+
 }
 .footer-index__info {
   margin-right: 20%;
   margin-top: 20px;
+  border-right: 2px solid white;
+  padding-right: 40%;
 }
 
 .footer-index__titulo {
@@ -487,6 +505,14 @@ main {
   color: white;
   font-size: 25px;
   margin-right: 20px;
+}
+
+.siguenos{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .up-fixed {
@@ -535,6 +561,12 @@ main {
 }
 .info span {
   font-weight: normal;
+}
+
+.redes-sociales{
+ 
+  margin-top: 20px;
+
 }
 
 .redes-sociales ul {
