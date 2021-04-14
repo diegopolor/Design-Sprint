@@ -20,6 +20,7 @@ html {
   font-size: var(--font-size);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,6 +40,12 @@ body {
 }
 img {
   max-width: 100%;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
 }
 .background-editado {
   background-position: center;
@@ -195,7 +202,7 @@ img {
   margin-bottom: 40px;
 }
 main {
-  box-shadow: #000;
+  /* box-shadow: #000; */
   padding-bottom: 20px;
 }
 .galeria {
@@ -217,13 +224,12 @@ main {
 
 .imagenes__galeria {
   border-radius: 20px;
-  transition: all .2s ease-in-out;  
+  transition: all 0.2s ease-in-out;
 }
 .imagenes__galeria:hover {
   box-shadow: 0 0 50px #666;
   transform: scale(1.01);
-  cursor: pointer; 
-
+  cursor: pointer;
 }
 .image-1 {
   background-image: url(../imagenes/galeria/camisa2.jpg);
@@ -270,6 +276,7 @@ main {
 .image-13 {
   background-image: url(../imagenes/galeria/camisa14.jpg);
 }
+/* Fin de galeria */
 
 .about {
   width: 100%;
@@ -395,6 +402,77 @@ main {
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
 }
 
+/* Contactos */
+.contenido {
+  background-color: #222222;
+  border-radius: 25px;
+  padding-top: 20px;
+  box-shadow: 2px 1px 10px rgb(0, 0, 0, 0.2);
+}
+.contactos-titulo {
+  text-align: center;
+  margin: 10px 0 50px 0;
+  color: #fff;
+}
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  width: 70%;
+  margin: 0 auto;
+}
+.formulario p {
+  margin: 0;
+  padding: 1em;
+}
+.formulario label {
+  display: block;
+  color: #fff;
+}
+.formulario .block {
+  grid-column: 1 / 3;
+}
+.formulario input,
+.formulario textarea,
+.formulario button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(145, 145, 145);
+  border-bottom: 1px solid #d63031;
+  resize: none;
+}
+
+.formulario textarea::-webkit-scrollbar {
+  width: 7px;
+}
+.formulario textarea::-webkit-scrollbar-thumb {
+  background-color: #ce2d2d;
+  border-radius: 10px;
+}
+
+.formulario button {
+  background: #b70e21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.formulario button:hover,
+.formulario button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* Fin de contactos */
+
+
+/*footer */
 .footer-index {
   margin-top: 100px;
   width: 100%;
@@ -406,10 +484,15 @@ main {
   width: 80%;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+ 
+
 }
 .footer-index__info {
   margin-right: 20%;
   margin-top: 20px;
+  border-right: 2px solid white;
+  padding-right: 40%;
 }
 
 .footer-index__titulo {
@@ -429,6 +512,14 @@ main {
   color: white;
   font-size: 25px;
   margin-right: 20px;
+}
+
+.siguenos{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .up-fixed {
@@ -479,6 +570,15 @@ main {
   font-weight: normal;
 }
 
+.redes-sociales{
+ 
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .redes-sociales ul {
   margin: 0;
   padding: 0;
@@ -493,7 +593,6 @@ main {
 }
 .redes-sociales ul li a {
   display: block;
-  padding: 0 10px;
   background-color: #333;
   color: #fff;
   line-height: 50px;
