@@ -13,7 +13,11 @@
   /* ----- Redes Sociales ---- */
   --facebook: #3b5999;
   --instagram: #e4405f;
+<<<<<<< HEAD
   --whatsapp: #00e676;
+=======
+  --whatsapp: #00E676;
+>>>>>>> 99d5bbdbd14b281e63084a8a145b27e3773aab33
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -269,6 +273,7 @@ main {
 .image-13 {
   background-image: url(../imagenes/galeria/camisa14.jpg);
 }
+<<<<<<< HEAD
 /* Fin de galeria */
 
 .about {
@@ -534,6 +539,8 @@ main {
   font-size: 20px;
 }
 
+=======
+>>>>>>> 99d5bbdbd14b281e63084a8a145b27e3773aab33
 /* Footer */
 .pie {
   background-color: #222222;
@@ -563,12 +570,21 @@ main {
   font-weight: normal;
 }
 
+<<<<<<< HEAD
 .redes-sociales{
  
   margin-top: 20px;
 
 }
 
+=======
+/* Siguenos */
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+>>>>>>> 99d5bbdbd14b281e63084a8a145b27e3773aab33
 .redes-sociales ul {
   margin: 0;
   padding: 0;
@@ -586,17 +602,28 @@ main {
   padding: 0 10px;
   background-color: #333;
   color: #fff;
+<<<<<<< HEAD
   line-height: 50px;
   font-size: 25px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
+=======
+  line-height:50px;
+  font-size: 25px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+  transition: .2s;
+>>>>>>> 99d5bbdbd14b281e63084a8a145b27e3773aab33
 }
 .redes-sociales ul:hover a {
   filter: blur(2px);
 }
 .redes-sociales ul li a:hover {
   transform: translateY(-3px) scale(1.05);
+<<<<<<< HEAD
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+=======
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+>>>>>>> 99d5bbdbd14b281e63084a8a145b27e3773aab33
   filter: none;
 }
 .redes-sociales ul li .facebook:hover {
